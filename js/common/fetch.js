@@ -1,0 +1,1 @@
+export async function fetchWithTimeout(t,o=5e3){const e=new AbortController,n=e.signal;setTimeout(()=>e.abort(),o);const r=await fetch(t,{signal:n});if(!r.ok)throw new Error(r.status);return r}

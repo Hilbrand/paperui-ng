@@ -1,0 +1,1 @@
+export function openhabHost(){var o=localStorage.getItem("host");return o||(o=window.location.origin),o}
